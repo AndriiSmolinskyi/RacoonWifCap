@@ -116,7 +116,6 @@ export default function Page() {
           </a>
         </div>
       </header>
-
       <main>
         <section id="about" className="min-h-screen p-8">ABOUT SECTION</section>
         <section id="buy" className="min-h-screen p-8">BUY SECTION</section>
