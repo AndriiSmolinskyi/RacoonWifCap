@@ -92,9 +92,9 @@ export default function Page() {
               key={id}
               href={`#${id}`}
               className={[
-                "relative font-bold text-2xl pb-2",
+                "relative font-bold text-2xl pb-2 ",
                 active === id
-                  ? "after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[3px] after:w-full after:bg-[var(--orange-figma)]"
+                  ? "after:content-[''] after:absolute after:left-0 after:top-16.5 after:h-[3px] after:w-full after:bg-[var(--orange-figma)]"
                   : "",
               ].join(" ")}
             >
