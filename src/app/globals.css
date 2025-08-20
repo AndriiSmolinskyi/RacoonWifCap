@@ -26,7 +26,7 @@
 body {
 	background: var(--grey-figma);
 	color: var(--white-figma);
-font-family: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+	font-family: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
 }
 
 header {
@@ -41,4 +41,9 @@ header {
 
 a:hover {
 	opacity: 0.8;
+}
+
+.bg-right-center {
+	background-position: 100% 60% !important;
+	background-size: auto;
 }
