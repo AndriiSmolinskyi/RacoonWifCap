@@ -1,4 +1,4 @@
-import About from "../../public/about.component";
+import About from "./components/about.component";
 import Buy from "./components/buy.component";
 import Faq from "./components/faq.component";
 import Roadmap from "./components/roadmap.component";

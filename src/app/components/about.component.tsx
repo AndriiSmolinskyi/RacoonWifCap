@@ -1,4 +1,4 @@
-import RacoonCarousel from "../src/app/components/coverflow.component";
+import RacoonCarousel from "./coverflow.component";
 
 export default function About() {
   return (

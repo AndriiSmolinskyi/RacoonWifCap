@@ -49,17 +49,17 @@ export default function Header() {
       </nav>
 
       <div className="flex gap-7 items-center">
-        <div className="flex gap-5 items-center">
-          <a href="#">
-            <Image src="/telegram.svg" alt="Telegram" width={40} height={40} priority />
-          </a>
-          <a href="#">
-            <Image src="/twitter.svg" alt="X" width={40} height={40} priority />
-          </a>
-        </div>
-        <a href="#">
-          <Image src="/buy.svg" alt="buy" width={166} height={56} priority />
-        </a>
+			<div className="flex gap-5 items-center">
+				<a href="#">
+					<Image src="/telegram.svg" alt="Telegram" width={40} height={40} priority />
+				</a>
+				<a href="#">
+					<Image src="/twitter.svg" alt="X" width={40} height={40} priority />
+				</a>
+			</div>
+			<a href="#">
+				<Image src="/buy.svg" alt="buy" width={166} height={56} priority />
+			</a>
       </div>
     </header>
   );

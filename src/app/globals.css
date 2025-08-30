@@ -7,6 +7,7 @@
 	--orange-figma: #E0A529;
 	--white-figma: #E5E5E5;
 	--black-figma: #111111;
+	--grayest-figma: #1E1E1E;
 	--font-stack: var(--font-poppins), ui-sans-serif, system-ui, -apple-system,
 		"Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
 		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -45,5 +46,10 @@ a:hover {
 
 .bg-right-center {
 	background-position: 100% 60% !important;
+	background-size: auto;
+}
+
+.bg-right-down {
+	background-position: 90% 20% !important;
 	background-size: auto;
 }
