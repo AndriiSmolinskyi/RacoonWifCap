@@ -117,7 +117,6 @@ export default function Roadmap() {
     new Array(SECTIONS.length).fill(false)
   );
 
-  // Фабрика колбек-рефів (важливо: нічого не "return"!)
   const setCardRef = useCallback(
     (index: number) => (el: HTMLDivElement | null): void => {
       cardsRef.current[index] = el;

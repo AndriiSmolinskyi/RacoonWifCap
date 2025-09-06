@@ -144,7 +144,7 @@ export default function RacoonCarousel() {
   ];
 
   return (
-    <div className="mt-6">
+    <div className="mt-6 pb-24">
       <Swiper
 			className="racoon-swiper"
 			loop

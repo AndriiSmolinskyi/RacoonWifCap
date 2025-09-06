@@ -23,6 +23,19 @@
     --foreground: #ededed;
 	}
 } */
+ * {
+ 	transition: all 0.3s ease-in-out;
+ }
+
+ a,
+ button,
+ header,
+ nav,
+ h1,
+ h2,
+ h3 {
+ 	transition: color 0.3s ease, background-color 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+ }
 
 body {
 	background: var(--grey-figma);
@@ -58,3 +71,9 @@ a:hover {
 	background-position: 0% 80% !important;
 	background-size: cover;
 }
+
+.bg-join {
+	background-position: 100% 110% !important;
+	background-size: auto;
+}
+
