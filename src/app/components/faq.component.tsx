@@ -2,7 +2,7 @@
 
 export default function Faq() {
   return (
-	  <section id="faq" className="p-24 relative bg-[url('/faq-bg.png')] bg-no-repeat bg-right-down">
+	  <section id="faq" className="px-10 py-12 relative bg-[url('/faq-bg.png')] bg-no-repeat bg-right-down">
 		  <div className="max-w-[945px] pb-6">
 			  	<h2 className="text-[96px] font-bold leading-[100px] uppercase">
 				  FREQUENTLY ASKED <span className="text-[var(--orange-figma)]">QUESTIONS</span>

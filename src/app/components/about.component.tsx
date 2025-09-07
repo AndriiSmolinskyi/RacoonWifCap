@@ -7,7 +7,7 @@ export default function About() {
 		  id="about"
 		    className="relative bg-[url('/racoon-bg.png')] bg-no-repeat bg-right-center"
 		>
-			<div className="max-w-[945px] box-content p-24 flex flex-col gap-6">
+			<div className="max-w-[945px] box-content px-10 pt-12 pb-10 flex flex-col gap-6">
 				<h2 className="text-[96px] font-bold leading-[100px] uppercase">
 					WHAT`S Racoon<span className="text-[var(--orange-figma)]">wif</span>cap?
 				</h2>

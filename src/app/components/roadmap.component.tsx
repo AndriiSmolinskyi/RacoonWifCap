@@ -147,7 +147,7 @@ export default function Roadmap() {
   }, []);
 
   return (
-    <section id="roadmap" className="p-24 relative bg-[url('/racoon.png')] bg-no-repeat bg-roadmap">
+    <section id="roadmap" className="px-10 py-12 relative bg-[url('/racoon.png')] bg-no-repeat bg-roadmap">
       <div className="flex">
         <div className="inline-block pr-1 border-r-2 border-[var(--white-figma)] py-6">
           <p className="text-[var(--white-figma)] font-bold text-[150px] [writing-mode:vertical-rl] rotate-180">

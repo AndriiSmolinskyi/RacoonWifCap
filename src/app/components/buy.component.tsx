@@ -18,7 +18,7 @@ export default function Buy() {
 	};
 
   return (
-	  <section id="buy" className="p-24">
+	  <section id="buy" className="px-10 py-12">
 		  	<h2 className="text-[96px] font-bold leading-[100px] uppercase max-w-[945px]">
 				How to buy Racoon<span className="text-[var(--orange-figma)]">wif</span>cap?
 		  </h2>

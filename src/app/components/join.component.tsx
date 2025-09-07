@@ -104,7 +104,7 @@ export default function Join() {
   const display = `${printed}${showCursor ? "|" : ""}${remaining}`;
 
   return (
-    <section className="p-24 relative bg-[url('/raccoon-join.png')] bg-no-repeat bg-join">
+    <section className="px-10 py-12 relative bg-[url('/raccoon-join.png')] bg-no-repeat bg-join">
       <div className="text-center max-w-[1100px] mx-auto">
         <h2 className="font-bold text-[96px] text-[var(--white-figma)] leading-[1.1] mb-12">
           JOIN THE{" "}
