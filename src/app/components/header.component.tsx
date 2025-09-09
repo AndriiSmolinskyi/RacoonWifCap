@@ -89,8 +89,7 @@ export default function Header() {
     }, 800); 
   };
 
-  const handleBuyClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
+  const handleBuyClick = () => {
     setBuyChecked(true);
     window.setTimeout(() => setBuyChecked(false), 2000);
   };
