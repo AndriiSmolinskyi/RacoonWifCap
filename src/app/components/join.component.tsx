@@ -69,7 +69,7 @@ export default function Join() {
   const handleCopy = async () => {
     try {
       await navigator.clipboard.writeText(
-        "https://www.youtube.com/watch?v=hkEpaavcn3A&ab_channel=CrazyFrogKOR05"
+        "CA"
       );
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);

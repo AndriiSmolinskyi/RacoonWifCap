@@ -138,9 +138,14 @@ export default function Header() {
           {/* <a href="#" className="transition-opacity hover:opacity-80">
             <Image src="/telegram.svg" alt="Telegram" width={40} height={40} priority />
           </a> */}
-          <a href="#" className="transition-opacity hover:opacity-80">
-            <Image src="/twitter.svg" alt="X" width={40} height={40} priority />
-          </a>
+				<a
+					href="https://x.com/i/communities/1965434305389236674"
+					target="_blank" 
+  					rel="noopener noreferrer"
+					className="transition-opacity hover:opacity-80"
+				>
+					<Image src="/twitter.svg" alt="X" width={40} height={40} priority />
+				</a>
         </div>
 
         <a

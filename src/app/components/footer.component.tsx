@@ -13,12 +13,16 @@ export default function Footer() {
 			</div>
 
 			<div className="flex gap-5 items-center">
-				<a href="#">
+				{/* <a href="#">
 					<Image src="/telegram.svg" alt="Telegram" width={40} height={40} priority />
-				</a>
-				<a href="#">
+				</a> */}
+				<a
+					href="https://x.com/i/communities/1965434305389236674"
+					target="_blank" 
+					rel="noopener noreferrer"
+				>
 					<Image src="/twitter.svg" alt="X" width={40} height={40} priority />
-					</a>
+				</a>
 			</div>
 		</section>
 	);
