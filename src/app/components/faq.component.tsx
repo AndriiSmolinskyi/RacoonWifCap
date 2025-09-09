@@ -7,7 +7,7 @@ export default function Faq() {
 			  	<h2 className="text-[96px] font-bold leading-[100px] uppercase">
 				  FREQUENTLY ASKED <span className="text-[var(--orange-figma)]">QUESTIONS</span>
 			  </h2>
-			  <p className="text-[var(--white-figma)] font-medium text-[32px] mb-6">Thoughts about RacoonWifCap?</p>
+			  <p className="text-[var(--white-figma)] font-medium text-[32px] mb-6">Thoughts about RaccoonWifCap?</p>
 		  </div>
 		  <div>
 			  	<div className="flex gap-8 mb-8">

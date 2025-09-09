@@ -12,8 +12,8 @@ const poppins = Poppins({
 
 
 export const metadata: Metadata = {
-  title: "RacoonWifCap",
-	description: "Racoon wif cap crypto",
+  title: "RaccoonWifCap",
+	description: "Raccoon wif cap crypto",
    icons: {
     icon: "/avatar.svg",
   },

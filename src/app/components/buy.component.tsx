@@ -20,7 +20,7 @@ export default function Buy() {
   return (
 	  <section id="buy" className="px-10 py-12">
 		  	<h2 className="text-[96px] font-bold leading-[100px] uppercase max-w-[945px]">
-				How to buy Racoon<span className="text-[var(--orange-figma)]">wif</span>cap?
+				How to buy Raccoon<span className="text-[var(--orange-figma)]">wif</span>cap?
 		  </h2>
 		  <div className="flex w-full items-center justify-center gap-6 py-8">
 			  	<Image
@@ -39,7 +39,7 @@ export default function Buy() {
 				/>
 			   <Image
 					src='/buy3.svg'
-					alt={'Grab your racoon'}
+					alt={'Grab your raccoon'}
 					width={428} 
 				  height={245}
 				        className="w-full h-full object-contain"

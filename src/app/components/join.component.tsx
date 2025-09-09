@@ -63,7 +63,7 @@ export default function Join() {
   const [step, setStep] = useState(0);
   const [showCursor, setShowCursor] = useState(true);
 
-  const fullText = "RACOON`S";
+  const fullText = "RACCOON`S";
   const placeholders = "_".repeat(fullText.length);
 
   const handleCopy = async () => {
@@ -105,7 +105,7 @@ export default function Join() {
 
   return (
     <section className="px-10 py-12 relative bg-[url('/raccoon-join.png')] bg-no-repeat bg-join">
-      <div className="text-center max-w-[1100px] mx-auto">
+      <div className="text-center max-w-[1200px] mx-auto">
         <h2 className="font-bold text-[96px] text-[var(--white-figma)] leading-[1.1] mb-12">
           JOIN THE{" "}
           <span className="text-[var(--orange-figma)]">{display}</span> PARTY!
@@ -116,7 +116,7 @@ export default function Join() {
         </p>
       </div>
 
-      <div className="flex w-full items-center gap-6 pt-6">
+      <div className="flex w-full justify-center items-center gap-6 pt-6">
         <div className="w-[885px] h-[64px] rounded-[30px] bg-[var(--black-figma)] text-[var(--white-figma)] font-light text-2xl flex items-center justify-center shrink-0">
           CA
         </div>
