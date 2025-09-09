@@ -8,7 +8,7 @@ export default function Buy() {
 	const handleCopy = async () => {
 		try {
 			await navigator.clipboard.writeText(
-			"CA"
+			"Fj2RDFsVMM3RVkDct8c4891gJkqpQMtzjxzTAP6Npump"
 			);
 			setCopied(true);
 			setTimeout(() => setCopied(false), 2000); 
@@ -21,8 +21,8 @@ export default function Buy() {
 	  <section id="buy" className="px-10 py-12">
 		  	<h2 className="text-[96px] font-bold leading-[100px] uppercase max-w-[945px]">
 				How to buy Raccoon<span className="text-[var(--orange-figma)]">wif</span>cap?
-		  </h2>
-		  <div className="flex w-full items-center justify-center gap-6 py-8">
+			</h2>
+			<div className="flex w-full items-center justify-center gap-6 py-8">
 			  	<Image
 					src='/buy1.svg'
 					alt={'Create a wallet'}
@@ -44,11 +44,12 @@ export default function Buy() {
 				  height={245}
 				        className="w-full h-full object-contain"
 				/>
-		  </div>
-		  <div className="flex w-full items-center justify-center gap-6">
-			    <div className="w-[885px] h-[64px] rounded-[30px] bg-[var(--black-figma)] text-[var(--white-figma)] font-light text-2xl
-                  flex items-center justify-center shrink-0">
-					CA
+			</div>
+			<div className="flex w-full items-center justify-center gap-6">
+			   <div className="w-[885px] h-[64px] rounded-[30px] bg-[var(--black-figma)] text-[var(--white-figma)] font-light text-2xl
+               flex items-center justify-center shrink-0"
+			  	>
+					Fj2RDFsVMM3RVkDct8c4891gJkqpQMtzjxzTAP6Npump
 				</div>
 			   <button
 					onClick={handleCopy}
@@ -66,7 +67,7 @@ export default function Buy() {
 					/>
 					<span>{copied ? "Copied" : "Copy"}</span>
 				</button>
-		  </div>
+		  	</div>
     </section>
   );
 }

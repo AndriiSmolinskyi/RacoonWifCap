@@ -69,7 +69,7 @@ export default function Join() {
   const handleCopy = async () => {
     try {
       await navigator.clipboard.writeText(
-        "CA"
+        "Fj2RDFsVMM3RVkDct8c4891gJkqpQMtzjxzTAP6Npump"
       );
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
@@ -103,8 +103,8 @@ export default function Join() {
   const remaining = placeholders.slice(step);
   const display = `${printed}${showCursor ? "|" : ""}${remaining}`;
 
-  return (
-    <section className="px-10 py-12 relative bg-[url('/raccoon-join.png')] bg-no-repeat bg-join">
+  	return (
+   <section className="px-10 py-12 relative bg-[url('/raccoon-join.png')] bg-no-repeat bg-join">
       <div className="text-center max-w-[1200px] mx-auto">
         <h2 className="font-bold text-[96px] text-[var(--white-figma)] leading-[1.1] mb-12">
           JOIN THE{" "}
@@ -117,27 +117,27 @@ export default function Join() {
       </div>
 
       <div className="flex w-full justify-center items-center gap-6 pt-6">
-        <div className="w-[885px] h-[64px] rounded-[30px] bg-[var(--black-figma)] text-[var(--white-figma)] font-light text-2xl flex items-center justify-center shrink-0">
-          CA
-        </div>
+			<div className="w-[885px] h-[64px] rounded-[30px] bg-[var(--black-figma)] text-[var(--white-figma)] font-light text-2xl flex items-center justify-center shrink-0">
+				Fj2RDFsVMM3RVkDct8c4891gJkqpQMtzjxzTAP6Npump
+			</div>
 
-        <button
-          onClick={handleCopy}
-          className={`cursor-pointer flex items-center justify-center gap-2 w-[183px] h-[63px] rounded-[30px] text-2xl font-medium transition-opacity duration-200 ${
-            copied
-              ? "bg-[var(--white-figma)] text-[var(--black-figma)]"
-              : "bg-[var(--orange-figma)] text-[var(--white-figma)] hover:opacity-80"
-          }`}
-        >
-          <Image
-            src={copied ? "/check.svg" : "/copy.svg"}
-            alt={copied ? "copied" : "copy"}
-            width={36}
-            height={36}
-          />
-          <span>{copied ? "Copied" : "Copy"}</span>
+			<button
+				onClick={handleCopy}
+				className={`cursor-pointer flex items-center justify-center gap-2 w-[183px] h-[63px] rounded-[30px] text-2xl font-medium transition-opacity duration-200 ${
+					copied
+					? "bg-[var(--white-figma)] text-[var(--black-figma)]"
+					: "bg-[var(--orange-figma)] text-[var(--white-figma)] hover:opacity-80"
+				}`}
+			>
+				<Image
+					src={copied ? "/check.svg" : "/copy.svg"}
+					alt={copied ? "copied" : "copy"}
+					width={36}
+					height={36}
+				/>
+          	<span>{copied ? "Copied" : "Copy"}</span>
         </button>
       </div>
-    </section>
+   </section>
   );
 }

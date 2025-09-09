@@ -96,74 +96,76 @@ export default function Header() {
   };
 
   return (
-    <header className="w-full h-[100px] px-7 bg-[var(--black-figma)] flex justify-between items-center sticky top-0 z-50 text-[var(--white-figma)]">
-      <div className="flex gap-4 items-center">
-        <Image src="/avatar.svg" alt="Racoon logo" width={76} height={76} priority />
-        <h1 className="font-extrabold text-2xl">
-          RACCOON<span className="text-[var(--orange-figma)]">WIF</span>CAP
-        </h1>
-      </div>
+    	<header className="w-full h-[100px] px-7 bg-[var(--black-figma)] flex justify-between items-center sticky top-0 z-50 text-[var(--white-figma)]">
+			<div className="flex gap-4 items-center">
+				<Image src="/avatar.svg" alt="Racoon logo" width={76} height={76} priority />
+				<h1 className="font-extrabold text-2xl">
+					RACCOON<span className="text-[var(--orange-figma)]">WIF</span>CAP
+				</h1>
+			</div>
 
 
-      <nav ref={navRef} className="relative flex justify-between w-1/3 h-[100px]">
-        {SECTIONS.map((id, i) => (
-          <a
-            key={id}
-            href={`#${id}`}
-            ref={setLinkRef(i)}
-            onClick={(e) => handleNavClick(e, id)}
-            className={[
-              "font-bold text-2xl w-[84px] h-[100px]",
-              "flex items-center justify-center",
-              "transition-colors duration-300",
-              active === id ? "text-[var(--white-figma)]" : "text-white/80 hover:text-white",
-            ].join(" ")}
-          >
-            {id.toUpperCase()}
-          </a>
-        ))}
+			<nav ref={navRef} className="relative flex justify-between w-1/3 h-[100px]">
+				{SECTIONS.map((id, i) => (
+					<a
+						key={id}
+						href={`#${id}`}
+						ref={setLinkRef(i)}
+						onClick={(e) => handleNavClick(e, id)}
+						className={[
+						"font-bold text-2xl w-[84px] h-[100px]",
+						"flex items-center justify-center",
+						"transition-colors duration-300",
+						active === id ? "text-[var(--white-figma)]" : "text-white/80 hover:text-white",
+						].join(" ")}
+					>
+						{id.toUpperCase()}
+					</a>
+				))}
 
-        <div
-          className="pointer-events-none absolute bottom-0 h-[3px] bg-[var(--orange-figma)]"
-          style={{
-            left: underline.left,
-            width: underline.width,
-            transition: "left 550ms cubic-bezier(.22,.61,.36,1), width 300ms ease",
-          }}
-        />
-      </nav>
+				<div
+					className="pointer-events-none absolute bottom-0 h-[3px] bg-[var(--orange-figma)]"
+					style={{
+						left: underline.left,
+						width: underline.width,
+						transition: "left 550ms cubic-bezier(.22,.61,.36,1), width 300ms ease",
+					}}
+				/>
+			</nav>
 
-      <div className="flex gap-7 items-center">
-        <div className="flex gap-5 items-center">
-          {/* <a href="#" className="transition-opacity hover:opacity-80">
-            <Image src="/telegram.svg" alt="Telegram" width={40} height={40} priority />
-          </a> */}
+			<div className="flex gap-7 items-center">
+				<div className="flex gap-5 items-center">
+				{/* <a href="#" className="transition-opacity hover:opacity-80">
+					<Image src="/telegram.svg" alt="Telegram" width={40} height={40} priority />
+				</a> */}
+					<a
+						href="https://x.com/i/communities/1965434305389236674"
+						target="_blank" 
+						rel="noopener noreferrer"
+						className="transition-opacity hover:opacity-80"
+					>
+						<Image src="/twitter.svg" alt="X" width={40} height={40} priority />
+					</a>
+				</div>
+
 				<a
-					href="https://x.com/i/communities/1965434305389236674"
+					href="https://pump.fun/coin/Fj2RDFsVMM3RVkDct8c4891gJkqpQMtzjxzTAP6Npump"
 					target="_blank" 
-  					rel="noopener noreferrer"
-					className="transition-opacity hover:opacity-80"
+					rel="noopener noreferrer"
+					onClick={handleBuyClick}
+					className="transition-opacity hover:opacity-80 cursor-pointer"
+					aria-label={buyChecked ? "Bought" : "Buy"}
+					title={buyChecked ? "Bought" : "Buy"}
 				>
-					<Image src="/twitter.svg" alt="X" width={40} height={40} priority />
+					<Image
+						src={buyChecked ? "/buy-check.svg" : "/buy.svg"}
+						alt={buyChecked ? "buy checked" : "buy"}
+						width={166}
+						height={56}
+						priority
+					/>
 				</a>
-        </div>
-
-        <a
-          href="#"
-          onClick={handleBuyClick}
-          className="transition-opacity hover:opacity-80 cursor-pointer"
-          aria-label={buyChecked ? "Bought" : "Buy"}
-          title={buyChecked ? "Bought" : "Buy"}
-        >
-          <Image
-            src={buyChecked ? "/buy-check.svg" : "/buy.svg"}
-            alt={buyChecked ? "buy checked" : "buy"}
-            width={166}
-            height={56}
-            priority
-          />
-        </a>
-      </div>
-    </header>
+			</div>
+		</header>
   );
 }
